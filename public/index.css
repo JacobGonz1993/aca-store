@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.searchbox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    color: black;
+}
+.search-btn{
+    float: right;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: 1px;
+    outline-color:black;
+}
+.search-txt{
+    float: left;
+    padding: 0;
+    height: 30px;
+    outline-color: grey;
+    font-size: 16px;
+    width: 240px;
+}

@@ -4,11 +4,23 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>My Store</title>
+    <link rel="stylesheet" href="index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
    
 </head>
 <body>
-     <script src="products.js"></script>    
+    <button type="button" id="btnHome" onclick="returnHome()">Home</button>
+    <input id="btnSearch"><button type="button" onclick="search()">search</button></input>
+    <button type="button" id="btnGoToCart" onclick="goToCart()">Cart</button>
+    <!-- <form autocomplete="off" action="products.js">
+        <div class="searchbox">
+            <input class="search-txt" type="text" name="" id="myInput" placeholder="Search by name"></input>
+            <a class= "search-btn" href="#">Search </a>
+        </div>
+    </form> -->
+    <button style="display: none" type="button" id="btnAddToCart" onClick="addToCart()">Add To Cart</button>
+    <div id ="products"></div>
+     <script src="products.js"></script>   
     <script src="index.js"></script>   
 </body>
 </html>
