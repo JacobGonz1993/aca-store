@@ -1,4 +1,5 @@
 //stuff
+//just checking
 //cart is an empty array you push items to
 let cart=[];
 //best practice to set this to null?
