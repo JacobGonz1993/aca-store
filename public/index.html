@@ -9,6 +9,23 @@
    
 </head>
 <body>
+<!--sign up code-->
+    <!-- <div id="register">
+        <form action="">
+            <label for="email">Email:</label>
+            <input id="email" type="text"
+            placeholder="example123@hotmail.com" required> <br/>
+            <label for="password">Password:</label>
+            <input id="password" type="password"> <br/>
+            <button type="button" id="btnSignUp" onclick="signUp()">Sign Up</button>
+        </form>
+    </div> -->
+
+
+    <!-- <div id="main" style="display: none"> -->
+   
+
+
     <button type="button" id="btnHome" onclick="returnHome()">Home</button>
     <input id="btnSearch"><button type="button" onclick="search()">search</button></input>
     <button type="button" id="btnGoToCart" onclick="goToCart()">Cart</button>
@@ -18,9 +35,19 @@
             <a class= "search-btn" href="#">Search </a>
         </div>
     </form> -->
+    
+    <div id="products"></div>
+
     <button style="display: none" type="button" id="btnAddToCart" onClick="addToCart()">Add To Cart</button>
-    <div id ="products"></div>
-     <script src="products.js"></script>   
-    <script src="index.js"></script>   
+    <div id="products"></div>
+    </div>
+    <!-- got rid of the product.js script as recommended by eric -->
+    <script src="index.js"></script>  
+    <script type="module">
+            import('products.js').then(module => {
+                console.log(module);
+              });
+    </script>
+     
 </body>
 </html>
